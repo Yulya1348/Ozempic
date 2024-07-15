@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оземпик</title>
+
+  <link rel="preload" href="fonts/FuturaPT-Book.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/FuturaPT-Book.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/FuturaPT-Medium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/FuturaPT-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/FuturaPT-Demi.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/FuturaPT-Demi.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="shortcut icon" href="Favicon.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script defer src="js/jquery-3.2.1.min.js"></script>
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/bootstrap.min.js"></script>
+  <script defer src="js/fslightbox.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body id="scroll">
+  <header class="header">
+    <div class="header-up container" id="menubar-mob">
+      <ul class="header-up__contacts-list" id="contacts">
+        <li class="header-up__contacts-item">
+          <a href="tel:+78003024023" class="header-up__phone-btn">
+            <span class="header-up__contacts-icon">
+              <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0929 30.1516L26.9362 27.3083C27.5554 26.6891 28.3925 26.3327 29.2681 26.3229C30.145 26.313 30.9889 26.6523 31.6094 27.2729L34.9879 30.6514C35.714 31.3775 35.714 32.5548 34.9879 33.2809C33.5837 34.6851 31.5786 35.411 29.5821 35.0459C28.8146 34.9056 27.9851 34.732 27.3985 34.5423C26.3747 34.2113 25.3009 33.8547 23.4972 32.4202C22.6777 31.7685 21.711 30.8978 20.5253 29.7122C19.3397 28.5266 18.4691 27.5599 17.8174 26.7404C16.3829 24.9366 16.0262 23.8629 15.6953 22.8391C15.5056 22.2524 15.332 21.4229 15.1916 20.6555C14.8266 18.659 15.5524 16.6539 16.9567 15.2497C17.6828 14.5236 18.8601 14.5236 19.5862 15.2497L22.9647 18.6282C23.5852 19.2487 23.9246 20.0926 23.9147 20.9694C23.9049 21.845 23.5484 22.6822 22.9293 23.3014L20.086 26.1446C20.5963 26.733 21.2312 27.4129 22.0279 28.2096C22.8246 29.0063 23.5046 29.6413 24.0929 30.1516ZM18.7724 24.453L21.4267 21.7988C21.6579 21.5675 21.7863 21.2592 21.7899 20.9456C21.7934 20.6332 21.6731 20.3418 21.4621 20.1308L18.277 16.9457C17.4434 17.8853 17.0696 19.1116 17.282 20.2733C17.4213 21.035 17.5744 21.7437 17.7172 22.1854L17.7279 22.2185C17.9402 22.8753 18.145 23.5091 18.7724 24.453ZM25.7845 31.4652C26.7285 32.0926 27.3623 32.2974 28.019 32.5097C28.0301 32.5132 28.0411 32.5168 28.0522 32.5204C28.4938 32.6632 29.2026 32.8163 29.9643 32.9556C31.126 33.168 32.3523 32.7942 33.2919 31.9605L30.1068 28.7755C29.8958 28.5645 29.6044 28.4442 29.292 28.4477C28.9784 28.4512 28.67 28.5797 28.4388 28.8109L25.7845 31.4652Z" fill="#C7413C"/>
+                <rect x="1" y="0.5" width="49" height="49" rx="24.5" stroke="#C7413C"/>
+              </svg>
+            </span>
+            <span class="header-up__contacts-text">8-800-302-40-23</span>
+          </a>
+        </li>
+        <li class="header-up__contacts-item">
+          <a href="mailto: apteca@protonmail.com" class="header-up__mail-btn">
+            <span class="header-up__contacts-icon">
+              <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8125 15.4375L12.75 16.5V33.5L13.8125 34.5625H37.1875L38.25 33.5V16.5L37.1875 15.4375H13.8125ZM14.875 18.902V32.4375H36.125V18.9016L25.4998 28.5609L14.875 18.902ZM34.439 17.5625H16.5606L25.4998 25.689L34.439 17.5625Z" fill="#C7413C"/>
+                <rect x="1" y="0.5" width="49" height="49" rx="24.5" stroke="#C7413C"/>
+              </svg>
+            </span>
+            <span class="header-up__contacts-text">apteca@protonmail.com</span>
+          </a>
+        </li>
+      </ul>
+      <div class="header-up__right">
+        <a class="header-up__logo" href="index.html">
+          <span class="header-up__logo-text">Официальный сайт</span>
+          <img class="header-up__logo-img" src="img/logo.svg" alt="Логотип">
+        </a> 
+        <button class="header-up__location" id="modal__btn">
+          <svg class="header-up__icon-desk" width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.6667 15.5834C31.6667 23.4074 17.5 34 17.5 34C17.5 34 3.33334 23.4074 3.33334 15.5834C3.33334 7.75932 9.67598 1.41669 17.5 1.41669C25.324 1.41669 31.6667 7.75932 31.6667 15.5834Z" fill="white" stroke="#2C2C2C" stroke-width="2"/>
+            <ellipse cx="17.5" cy="15.5833" rx="4.25" ry="4.25" fill="white" stroke="#2C2C2C" stroke-width="2"/>
+          </svg>
+          <svg class="header-up__icon-mob" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.3333 9.66665C18.3333 14.269 9.99996 20.5 9.99996 20.5C9.99996 20.5 1.66663 14.269 1.66663 9.66665C1.66663 5.06427 5.39759 1.33331 9.99996 1.33331C14.6023 1.33331 18.3333 5.06427 18.3333 9.66665Z" fill="white" stroke="#2C2C2C" stroke-width="2"/>
+            <ellipse cx="10" cy="9.66669" rx="2.5" ry="2.5" fill="white" stroke="#2C2C2C" stroke-width="2"/>
+          </svg>
+          Москва
+        </button>
+        <button class="header-burger" aria-label="Открыть меню">
+          <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 12.5V10.5H18V12.5H0ZM0 7.5V5.5H18V7.5H0ZM0 2.5V0.5H18V2.5H0Z" fill="black"/>
+          </svg>
+        </button>
+        <div class="header-mobile__burger-menu">
+          <button class="header-mobile__burger-close">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.93945 5.99995L0.969727 9.96968L2.03039 11.0303L6.00011 7.06061L9.96984 11.0303L11.0305 9.96968L7.06077 5.99995L11.0304 2.03034L9.96973 0.969681L6.00011 4.93929L2.0305 0.969681L0.969839 2.03034L4.93945 5.99995Z" fill="#252B42"/>
+            </svg>
+          </button>
+          <button class="header-up__location header-mobile__location" id="modal__btn-mob">
+            <svg class="header-up__icon-mob" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.3333 9.66665C18.3333 14.269 9.99996 20.5 9.99996 20.5C9.99996 20.5 1.66663 14.269 1.66663 9.66665C1.66663 5.06427 5.39759 1.33331 9.99996 1.33331C14.6023 1.33331 18.3333 5.06427 18.3333 9.66665Z" fill="#E8F0F6" stroke="#2C2C2C" stroke-width="2"/>
+              <ellipse cx="10" cy="9.66669" rx="2.5" ry="2.5" fill="#E8F0F6" stroke="#2C2C2C" stroke-width="2"/>
+            </svg>
+            Москва
+          </button>
+          <nav class="header-mobile__burger-nav">
+            <ul class="header-mobile__list">
+              <li class="header-mobile__item"><a class="header-mobile__link" href="index.html">Главная</a></li>
+              <li class="header-mobile__item"><a class="header-mobile__link" href="#instruction">Инструкция</a></li>
+              <li class="header-mobile__item"><a class="header-mobile__link" href="#form">Где купить?</a></li>
+              <li class="header-mobile__item"><a class="header-mobile__link" href="#">Аналоги</a></li>
+              <li class="header-mobile__item"><a class="header-mobile__link" href="#">Блог</a></li>
+              <li class="header-mobile__item"><a class="header-mobile__link" href="#review">Отзывы</a></li>
+              <li class="header-mobile__item"><a class="header-mobile__link" href="#contacts">Контакты</a></li>
+              <li class="header-mobile__item"><a class="header-mobile__link" href="#">Доставка и оплата</a></li>
+            </ul>
+          </nav>
+          <ul class="header-up__social-list header-mobile__social-list">
+            <li class="header-up__social-item header-mobile__social-item">
+              <a class="header-up__icon header-up__icon-tg" href="#" aria-label="Ссылка на чат в Телеграм">
+                <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.5 3C10.22 3 3.5 9.72 3.5 18C3.5 26.28 10.22 33 18.5 33C26.78 33 33.5 26.28 33.5 18C33.5 9.72 26.78 3 18.5 3ZM25.46 13.2C25.235 15.57 24.26 21.33 23.765 23.985C23.555 25.11 23.135 25.485 22.745 25.53C21.875 25.605 21.215 24.96 20.375 24.405C19.055 23.535 18.305 22.995 17.03 22.155C15.545 21.18 16.505 20.64 17.36 19.77C17.585 19.545 21.425 16.05 21.5 15.735C21.5104 15.6873 21.509 15.6378 21.496 15.5907C21.4829 15.5437 21.4585 15.5005 21.425 15.465C21.335 15.39 21.215 15.42 21.11 15.435C20.975 15.465 18.875 16.86 14.78 19.62C14.18 20.025 13.64 20.235 13.16 20.22C12.62 20.205 11.6 19.92 10.835 19.665C9.89 19.365 9.155 19.2 9.215 18.675C9.245 18.405 9.62 18.135 10.325 17.85C14.705 15.945 17.615 14.685 19.07 14.085C23.24 12.345 24.095 12.045 24.665 12.045C24.785 12.045 25.07 12.075 25.25 12.225C25.4 12.345 25.445 12.51 25.46 12.63C25.445 12.72 25.475 12.99 25.46 13.2Z" fill="#C7413C"/>
+                </svg>
+              </a>
+            </li>
+            <li class="header-up__social-item header-mobile__social-item">
+              <a class="header-up__icon header-up__icon-wa" href="#" aria-label="Ссылка на чат What's app">
+                <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.5015 3C26.786 3 33.5015 9.7155 33.5015 18C33.5015 26.2845 26.786 33 18.5015 33C15.8507 33.0043 13.2465 32.3028 10.9565 30.9675L3.50749 33L5.53549 25.548C4.19913 23.2573 3.49706 20.652 3.50149 18C3.50149 9.7155 10.217 3 18.5015 3ZM13.3895 10.95L13.0895 10.962C12.8953 10.9738 12.7055 11.0249 12.5315 11.112C12.3688 11.2041 12.2202 11.3193 12.0905 11.454C11.9105 11.6235 11.8085 11.7705 11.699 11.913C11.1442 12.6344 10.8454 13.52 10.85 14.43C10.853 15.165 11.045 15.8805 11.345 16.5495C11.9585 17.9025 12.968 19.335 14.3 20.6625C14.621 20.982 14.936 21.303 15.275 21.6015C16.9301 23.0587 18.9024 24.1096 21.035 24.6705L21.887 24.801C22.1645 24.816 22.442 24.795 22.721 24.7815C23.1578 24.7589 23.5844 24.6407 23.9705 24.435C24.1669 24.3338 24.3586 24.2237 24.545 24.105C24.545 24.105 24.6095 24.063 24.7325 23.97C24.935 23.82 25.0595 23.7135 25.2275 23.538C25.352 23.409 25.46 23.2575 25.5425 23.085C25.6595 22.8405 25.7765 22.374 25.8245 21.9855C25.8605 21.6885 25.85 21.5265 25.8455 21.426C25.8395 21.2655 25.706 21.099 25.5605 21.0285L24.6875 20.637C24.6875 20.637 23.3825 20.0685 22.5845 19.7055C22.501 19.669 22.4115 19.6482 22.3205 19.644C22.2179 19.6335 22.1142 19.645 22.0164 19.6779C21.9186 19.7107 21.8289 19.7641 21.7535 19.8345C21.746 19.8315 21.6455 19.917 20.561 21.231C20.4987 21.3146 20.413 21.3779 20.3147 21.4126C20.2164 21.4473 20.11 21.452 20.009 21.426C19.9113 21.3998 19.8155 21.3667 19.7225 21.327C19.5365 21.249 19.472 21.219 19.3445 21.165C18.4836 20.7893 17.6865 20.2817 16.982 19.6605C16.793 19.4955 16.6175 19.3155 16.4375 19.1415C15.8474 18.5763 15.3331 17.937 14.9075 17.2395L14.819 17.097C14.7554 17.0012 14.704 16.898 14.666 16.7895C14.609 16.569 14.7575 16.392 14.7575 16.392C14.7575 16.392 15.122 15.993 15.2915 15.777C15.4565 15.567 15.596 15.363 15.686 15.2175C15.863 14.9325 15.9185 14.64 15.8255 14.4135C15.4055 13.3875 14.9705 12.366 14.5235 11.352C14.435 11.151 14.1725 11.007 13.934 10.9785C13.853 10.9695 13.772 10.9605 13.691 10.9545C13.4895 10.9445 13.2877 10.9465 13.0865 10.9605L13.388 10.9485L13.3895 10.95Z" fill="#C7413C"/>
+                </svg>
+              </a>
+            </li>
+            <li class="header-up__social-item">
+              <a class="section-hero__icon" href="#" aria-label="Ссылка на страницу Вконтакте">
+                <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.1095 3H13.9055C5.4995 3 3.5 4.9995 3.5 13.3905V22.5945C3.5 30.999 5.4845 33 13.8905 33H23.0945C31.499 33 33.5 31.0155 33.5 22.6095V13.4055C33.5 4.9995 31.5155 3 23.1095 3ZM27.719 24.405H25.5305C24.7025 24.405 24.4535 23.7345 22.9685 22.2495C21.6725 21 21.125 20.844 20.7965 20.844C20.3435 20.844 20.219 20.9685 20.219 21.594V23.562C20.219 24.0945 20.0465 24.4065 18.656 24.4065C17.3065 24.3158 15.9979 23.9058 14.8379 23.2103C13.6779 22.5148 12.6998 21.5536 11.984 20.406C10.2848 18.291 9.10241 15.8087 8.531 13.1565C8.531 12.828 8.6555 12.531 9.281 12.531H11.468C12.0305 12.531 12.233 12.7815 12.4535 13.359C13.5155 16.485 15.3275 19.203 16.0625 19.203C16.3445 19.203 16.4675 19.0785 16.4675 18.375V15.156C16.3745 13.6875 15.5945 13.563 15.5945 13.032C15.6045 12.8919 15.6687 12.7613 15.7734 12.6678C15.8782 12.5742 16.0152 12.5252 16.1555 12.531H19.5935C20.063 12.531 20.219 12.765 20.219 13.3275V17.6715C20.219 18.141 20.4215 18.297 20.5625 18.297C20.8445 18.297 21.062 18.141 21.578 17.625C22.6863 16.2734 23.5918 14.7676 24.266 13.155C24.3349 12.9613 24.4653 12.7955 24.6373 12.6828C24.8093 12.5701 25.0134 12.5168 25.2185 12.531H27.407C28.0625 12.531 28.202 12.8595 28.0625 13.3275C27.2667 15.1101 26.2821 16.8023 25.1255 18.375C24.89 18.735 24.7955 18.9225 25.1255 19.344C25.343 19.6725 26.1095 20.313 26.6255 20.922C27.3754 21.67 27.998 22.5353 28.469 23.484C28.6565 24.093 28.343 24.405 27.719 24.405Z" fill="#C7413C"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-down container">
+      <nav class="header-down__nav">
+        <ul class="header-down__list">
+          <li class="header-down__item">
+            <a class="header-down__link" href="index.html">Главная</a>
+          </li>
+          <li class="header-down__item">
+            <a class="header-down__link" href="#instruction">Инструкция</a>
+          </li>
+          <li class="header-down__item">
+            <a class="header-down__link" href="#form">Где купить?</a>
+          </li>
+          <li class="header-down__item">
+            <a class="header-down__link" href="#">Аналоги</a>
+          </li>
+          <li class="header-down__item">
+            <a class="header-down__link" href="#">Блог</a>
+          </li>
+          <li class="header-down__item">
+            <a class="header-down__link" href="#review">Отзывы</a>
+          </li>
+          <li class="header-down__item">
+            <a class="header-down__link" href="#contacts">Контакты</a>
+          </li>
+          <li class="header-down__item">
+            <a class="header-down__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="header-down__item">
+            <a class="header-down__link" href="#">Подарок
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_193_335)">
+                <path d="M9.74299 5.99091H7.25599C6.22599 5.99091 4.67699 5.11991 4.10499 4.54391C3.29999 3.73291 3.29999 2.41191 4.10599 1.60091C4.88899 0.812906 6.25499 0.812906 7.03899 1.60091C7.47199 2.03691 8.62199 3.80791 8.46399 4.98991H8.53499C8.37699 3.80791 9.52699 2.03691 9.96099 1.60091C10.743 0.812906 12.109 0.810906 12.894 1.60091C13.701 2.41191 13.701 3.73191 12.894 4.54291C12.322 5.11891 10.773 5.99091 9.74299 5.99091ZM9.74299 4.99091C10.434 4.99091 11.754 4.27291 12.184 3.83891C12.604 3.41691 12.604 2.72891 12.184 2.30691C11.778 1.89791 11.073 1.89991 10.669 2.30691C9.99499 2.98491 9.32499 4.71691 9.55799 4.95791C9.55899 4.95791 9.60099 4.99091 9.74299 4.99091ZM5.57299 1.99091C5.28699 1.99091 5.01799 2.10291 4.81499 2.30691C4.39599 2.72891 4.39599 3.41691 4.81499 3.83891C5.24599 4.27291 6.56499 4.99091 7.25599 4.99091C7.39899 4.99091 7.44099 4.95891 7.44099 4.95891C7.67399 4.71591 7.00399 2.98391 6.32999 2.30691C6.12699 2.10291 5.85799 1.99091 5.57299 1.99091Z" fill="#F44336"/>
+                <path d="M1.5 7.99084V14.9908C1.5 15.5428 1.949 15.9908 2.5 15.9908H14.5C15.052 15.9908 15.5 15.5428 15.5 14.9908V7.99084H1.5Z" fill="#FFC107"/>
+                <path d="M15.5 4.99084H1.5C0.949 4.99084 0.5 5.43985 0.5 5.99085V8.49086C0.5 8.76686 0.724 8.99086 1 8.99086H16C16.276 8.99086 16.5 8.76686 16.5 8.49086V5.99085C16.5 5.43885 16.052 4.99084 15.5 4.99084Z" fill="#FFD54F"/>
+                <path d="M9.5 4.99084H7.5V15.9908H9.5V4.99084Z" fill="#F44336"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_193_335">
+                <rect width="16" height="16" fill="white" transform="translate(0.5 0.5)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <span class="header-down__right">Распродажа до -40%</span>
+    </div>
+    <div class="modal" id="modal__city">
+      <div class="modal__box">
+        <button class="modal__close-btn" id="close-city-btn">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.93945 5.99995L0.969727 9.96968L2.03039 11.0303L6.00011 7.06061L9.96984 11.0303L11.0305 9.96968L7.06077 5.99995L11.0304 2.03034L9.96973 0.969681L6.00011 4.93929L2.0305 0.969681L0.969839 2.03034L4.93945 5.99995Z" fill="#282828"/>
+          </svg>
+        </button>
+        <h2 class="modal-heading">Выберите город</h2>
+        <div class="modal-cont">
+          <div class="modal-right">
+            <ul class="modal-right__top-list">
+              <li class="modal-right__top-item"><a class="modal-right__top-link" href="#">Москва</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__top-link" href="#">Санкт-Петербург</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__top-link" href="#">Новосибирск</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__top-link" href="#">Клинцы</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__top-link" href="#">Новозыбков</a></li>
+            </ul>
+            <form class="modal-right__form" action="#" autocomplete="off">
+              <div class="input-box modal-right__input-box">
+                <label class="header-form__label" for="GET-name">Введите название города
+                </label>
+                <input class="header-form__input" id="GET-name" type="text" aria-label="Введите город" placeholder="" name="name">
+              </div>
+              <button class="modal-right__form-btn" type="submit" aria-label="Начать поиск">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z" stroke="#C7413C"/>
+                  <path d="M22.0009 21.9999L18.7832 18.7822" stroke="#C7413C"/>
+                </svg>
+              </button>
+            </form>
+            <ul class="modal-right__bottom-list">
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Брянск</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Брянск</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Брянск</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Брянск</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Дятьково</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Дятьково</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Дятьково</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Дятьково</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Клинцы</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Клинцы</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Клинцы</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Клинцы</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Новозыбков</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Новозыбков</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Новозыбков</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Новозыбков</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Унеча</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Унеча</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Унеча</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Унеча</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Бытошь</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Бытошь</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Бытошь</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Бытошь</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Выгоничи</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Выгоничи</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Выгоничи</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Выгоничи</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Глинищево</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Глинищево</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Глинищево</a></li>
+              <li class="modal-right__top-item"><a class="modal-right__bottom-link" href="#">Глинищево</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-hero">
+      <div class="container section-hero__container">
+        <div class="section-hero__left">
+          <h1 class="section-hero__h1">Забронируйте Оземпик по лучшей цене!</h1>
+          <p class="section-hero__descr">Он имитирует гормон ГПП-1, который выделяется, когда человек поел. Таким образом, препарат стимулирует секрецию инсулина, способствует снижению сахара в крови и снижает аппетит.</p>
+          <div class="section-hero__social-btn">
+            <button class="accent-btn section-hero__left-btn">Купить&nbsp;Оземпик</button>
+            <ul class="section-hero__social-list">
+              <li class="section-hero__social-item">
+                <a class="section-hero__icon" href="#" aria-label="Ссылка на чат в Телеграм">
+                  <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.5 3C10.22 3 3.5 9.72 3.5 18C3.5 26.28 10.22 33 18.5 33C26.78 33 33.5 26.28 33.5 18C33.5 9.72 26.78 3 18.5 3ZM25.46 13.2C25.235 15.57 24.26 21.33 23.765 23.985C23.555 25.11 23.135 25.485 22.745 25.53C21.875 25.605 21.215 24.96 20.375 24.405C19.055 23.535 18.305 22.995 17.03 22.155C15.545 21.18 16.505 20.64 17.36 19.77C17.585 19.545 21.425 16.05 21.5 15.735C21.5104 15.6873 21.509 15.6378 21.496 15.5907C21.4829 15.5437 21.4585 15.5005 21.425 15.465C21.335 15.39 21.215 15.42 21.11 15.435C20.975 15.465 18.875 16.86 14.78 19.62C14.18 20.025 13.64 20.235 13.16 20.22C12.62 20.205 11.6 19.92 10.835 19.665C9.89 19.365 9.155 19.2 9.215 18.675C9.245 18.405 9.62 18.135 10.325 17.85C14.705 15.945 17.615 14.685 19.07 14.085C23.24 12.345 24.095 12.045 24.665 12.045C24.785 12.045 25.07 12.075 25.25 12.225C25.4 12.345 25.445 12.51 25.46 12.63C25.445 12.72 25.475 12.99 25.46 13.2Z" fill="#C7413C"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="section-hero__social-item">
+                <a class="section-hero__icon" href="#" aria-label="Ссылка на чат What's app">
+                  <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.5015 3C26.786 3 33.5015 9.7155 33.5015 18C33.5015 26.2845 26.786 33 18.5015 33C15.8507 33.0043 13.2465 32.3028 10.9565 30.9675L3.50749 33L5.53549 25.548C4.19913 23.2573 3.49706 20.652 3.50149 18C3.50149 9.7155 10.217 3 18.5015 3ZM13.3895 10.95L13.0895 10.962C12.8953 10.9738 12.7055 11.0249 12.5315 11.112C12.3688 11.2041 12.2202 11.3193 12.0905 11.454C11.9105 11.6235 11.8085 11.7705 11.699 11.913C11.1442 12.6344 10.8454 13.52 10.85 14.43C10.853 15.165 11.045 15.8805 11.345 16.5495C11.9585 17.9025 12.968 19.335 14.3 20.6625C14.621 20.982 14.936 21.303 15.275 21.6015C16.9301 23.0587 18.9024 24.1096 21.035 24.6705L21.887 24.801C22.1645 24.816 22.442 24.795 22.721 24.7815C23.1578 24.7589 23.5844 24.6407 23.9705 24.435C24.1669 24.3338 24.3586 24.2237 24.545 24.105C24.545 24.105 24.6095 24.063 24.7325 23.97C24.935 23.82 25.0595 23.7135 25.2275 23.538C25.352 23.409 25.46 23.2575 25.5425 23.085C25.6595 22.8405 25.7765 22.374 25.8245 21.9855C25.8605 21.6885 25.85 21.5265 25.8455 21.426C25.8395 21.2655 25.706 21.099 25.5605 21.0285L24.6875 20.637C24.6875 20.637 23.3825 20.0685 22.5845 19.7055C22.501 19.669 22.4115 19.6482 22.3205 19.644C22.2179 19.6335 22.1142 19.645 22.0164 19.6779C21.9186 19.7107 21.8289 19.7641 21.7535 19.8345C21.746 19.8315 21.6455 19.917 20.561 21.231C20.4987 21.3146 20.413 21.3779 20.3147 21.4126C20.2164 21.4473 20.11 21.452 20.009 21.426C19.9113 21.3998 19.8155 21.3667 19.7225 21.327C19.5365 21.249 19.472 21.219 19.3445 21.165C18.4836 20.7893 17.6865 20.2817 16.982 19.6605C16.793 19.4955 16.6175 19.3155 16.4375 19.1415C15.8474 18.5763 15.3331 17.937 14.9075 17.2395L14.819 17.097C14.7554 17.0012 14.704 16.898 14.666 16.7895C14.609 16.569 14.7575 16.392 14.7575 16.392C14.7575 16.392 15.122 15.993 15.2915 15.777C15.4565 15.567 15.596 15.363 15.686 15.2175C15.863 14.9325 15.9185 14.64 15.8255 14.4135C15.4055 13.3875 14.9705 12.366 14.5235 11.352C14.435 11.151 14.1725 11.007 13.934 10.9785C13.853 10.9695 13.772 10.9605 13.691 10.9545C13.4895 10.9445 13.2877 10.9465 13.0865 10.9605L13.388 10.9485L13.3895 10.95Z" fill="#C7413C"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="section-hero__social-item">
+                <a class="section-hero__icon" href="#" aria-label="Ссылка на страницу Вконтакте">
+                  <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.1095 3H13.9055C5.4995 3 3.5 4.9995 3.5 13.3905V22.5945C3.5 30.999 5.4845 33 13.8905 33H23.0945C31.499 33 33.5 31.0155 33.5 22.6095V13.4055C33.5 4.9995 31.5155 3 23.1095 3ZM27.719 24.405H25.5305C24.7025 24.405 24.4535 23.7345 22.9685 22.2495C21.6725 21 21.125 20.844 20.7965 20.844C20.3435 20.844 20.219 20.9685 20.219 21.594V23.562C20.219 24.0945 20.0465 24.4065 18.656 24.4065C17.3065 24.3158 15.9979 23.9058 14.8379 23.2103C13.6779 22.5148 12.6998 21.5536 11.984 20.406C10.2848 18.291 9.10241 15.8087 8.531 13.1565C8.531 12.828 8.6555 12.531 9.281 12.531H11.468C12.0305 12.531 12.233 12.7815 12.4535 13.359C13.5155 16.485 15.3275 19.203 16.0625 19.203C16.3445 19.203 16.4675 19.0785 16.4675 18.375V15.156C16.3745 13.6875 15.5945 13.563 15.5945 13.032C15.6045 12.8919 15.6687 12.7613 15.7734 12.6678C15.8782 12.5742 16.0152 12.5252 16.1555 12.531H19.5935C20.063 12.531 20.219 12.765 20.219 13.3275V17.6715C20.219 18.141 20.4215 18.297 20.5625 18.297C20.8445 18.297 21.062 18.141 21.578 17.625C22.6863 16.2734 23.5918 14.7676 24.266 13.155C24.3349 12.9613 24.4653 12.7955 24.6373 12.6828C24.8093 12.5701 25.0134 12.5168 25.2185 12.531H27.407C28.0625 12.531 28.202 12.8595 28.0625 13.3275C27.2667 15.1101 26.2821 16.8023 25.1255 18.375C24.89 18.735 24.7955 18.9225 25.1255 19.344C25.343 19.6725 26.1095 20.313 26.6255 20.922C27.3754 21.67 27.998 22.5353 28.469 23.484C28.6565 24.093 28.343 24.405 27.719 24.405Z" fill="#C7413C"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-hero__right">
+          <img class="section-hero__img" src="img/hero.png" alt="Оземпик">
+          <div class="section-hero__btns-wrap">
+            <div class="section-hero__btn section-hero__btn-up">
+              <span class="section-hero__btn-text">Интернет аптека “Оземпик”</span>
+              <div class="section-hero__btn-price">
+                <span class="section-hero__new-price">6000 <span class="rub">P</span></span>
+                <div class="section-hero__old-price">10000 <span class="rub">P</span></div>
+              </div>
+            </div>
+            <div class="section-hero__btn">
+              <span class="section-hero__btn-text">Остальные аптеки</span>
+              <span class="section-hero__new-price section-hero__other-price">от 8000 <span class="rub">P</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-other container section-padding">
+      <h2 class="section-other__heading heading-h2">Сравнение цен с другими аптеками</h2>
+      <span class="heading-descr">(Обновление цен от 20.08.2023)</span>
+      <div class="section-other__btn-wrap">
+        <button class="accent-btn section-other__btn section-other__btn__active" aria-label="Оземпик, раствор 1,5 мл" data-path="one">Оземпик, раствор 1,5&nbsp;мл</button>
+        <button class="light-btn section-other__btn " aria-label="Оземпик, раствор 3 мл" data-path="two">Оземпик, раствор 3&nbsp;мл</button>
+      </div>
+      <div class="section-other__card section-other__card__active" data-target="one">
+        <ul class="section-other__list">
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 1,5 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo1-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo1.jpg" alt="Интернет-аптека «Оземпик»">
+              </picture>
+              <span class="section-other__item-name"><strong>Интернет-аптека&nbsp;«Оземпик»&nbsp;в <br>интернет-аптеках в Москве</strong></span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div class="section-other__item-price">
+                <span class="section-other__new-price section-other__color-price">6000 руб!</span>
+                <span class="section-other__old-price">10000 руб</span>
+              </div>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 1,5 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo2-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo2.jpg" alt="Интернет-аптека «Планета здоровья»">
+              </picture>
+              <span class="section-other__item-name">Планета здоровья</span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <span class="section-other__new-price">10000 руб</span>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 1,5 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo3-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo3.jpg" alt="Интернет-аптека «Неофарм»">
+              </picture>
+              <span class="section-other__item-name">Неофарм</span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <span class="section-other__new-price">9000 руб</span>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 1,5 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo4-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo4.jpg" alt="Интернет-аптека «Фармленд»">
+              </picture>
+              <span class="section-other__item-name">Фармленд</span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <span class="section-other__new-price">9500 руб</span>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 1,5 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo5-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo5.jpg" alt="Интернет-аптека «Фармаимпекс»">
+              </picture>
+              <span class="section-other__item-name">Фармаимпекс</span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <span class="section-other__new-price">10000 руб</span>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 1,5 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo6-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo6.jpg" alt="Интернет-аптека «Омнифарм»">
+              </picture>
+              <span class="section-other__item-name">Омнифарм</span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <span class="section-other__new-price">8000 руб</span>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section-other__card" data-target="two">
+        <ul class="section-other__list">
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 3 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo1-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo1.jpg" alt="Интернет-аптека «Оземпик»">
+              </picture>
+              <span class="section-other__item-name"><strong>Интернет-аптека&nbsp;«Оземпик»&nbsp;в <br>интернет-аптеках в Москве</strong></span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div class="section-other__item-price">
+                <span class="section-other__new-price section-other__color-price">6000&nbsp;руб!</span>
+                <span class="section-other__old-price">10000&nbsp;руб</span>
+              </div>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 3 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo2-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo2.jpg" alt="Интернет-аптека «Планета здоровья»">
+              </picture>
+              <span class="section-other__item-name">Планета здоровья</span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <span class="section-other__new-price">10000&nbsp;руб</span>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 3 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo3-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo3.jpg" alt="Интернет-аптека «Неофарм»">
+              </picture>
+              <span class="section-other__item-name">Неофарм</span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <span class="section-other__new-price">9000&nbsp;руб</span>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 3 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo4-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo4.jpg" alt="Интернет-аптека «Фармленд»">
+              </picture>
+              <span class="section-other__item-name">Фармленд</span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <span class="section-other__new-price">9500&nbsp;руб</span>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 3 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo5-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo5.jpg" alt="Интернет-аптека «Фармаимпекс»">
+              </picture>
+              <span class="section-other__item-name">Фармаимпекс</span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <span class="section-other__new-price">10000&nbsp;руб</span>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+          <li class="section-other__item row">
+            <div class="section-other__item-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <img class="section-other__item-img" src="img/image1.png" alt="Оземпик">
+              <span class="section-other__item-descr">Оземпик, раствор для п/к введ 1,34&nbsp;мг/мл 3 мл</span>
+            </div>
+            <div class="section-other__item-middle col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <picture class="section-other__item-logo">
+                <source srcset="img/logo6-mob.svg" media="(max-width: 768px)">
+                <img src="img/logo6.jpg" alt="Интернет-аптека «Омнифарм»">
+              </picture>
+              <span class="section-other__item-name">Омнифарм</span>
+            </div>
+            <div class="section-other__item-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <span class="section-other__new-price">8000&nbsp;руб</span>
+              <button class="accent-btn section-other__item-btn">Купить онлайн</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="accent-btn section-other__btn-bottom">Показать все аптеки</button>
+    </section>
+    <section class="section-plus section-padding container">
+      <h2 class="section-plus__heading heading-h2">Преимущества препарата</h2>
+      <span class="heading-descr section-plus__heading-descr">то, за что «Оземпик» выбирают наши прекрасные клиентки</span>
+      <ul class="section-plus__list">
+        <li class="section-plus__item">
+          <span class="section-plus__number">01</span>
+          <img class="section-plus__img" src="img/plus1.png" alt="Первый плюс">
+          <span class="section-plus__descr">Усиливает чувство насыщения (сытости)</span>
+        </li>
+        <li class="section-plus__item">
+          <span class="section-plus__number">02</span>
+          <img class="section-plus__img" src="img/plus2.png" alt="Второй плюс">
+          <span class="section-plus__descr">Понижает уровень тощакового сахара</span>
+        </li>
+        <li class="section-plus__item">
+          <span class="section-plus__number">03</span>
+          <img class="section-plus__img" src="img/plus3.png" alt="Третий плюс">
+          <span class="section-plus__descr">Ослабляет силу голодных приступов</span>
+        </li>
+        <li class="section-plus__item">
+          <span class="section-plus__number">04</span>
+          <img class="section-plus__img" src="img/plus4.png" alt="Четвертый плюс">
+          <span class="section-plus__descr">Подавляет прогрессирование атеросклероза</span>
+        </li>
+        <li class="section-plus__item">
+          <span class="section-plus__number">05</span>
+          <img class="section-plus__img" src="img/plus5.png" alt="Пятый плюс">
+          <span class="section-plus__descr">Увеличивает чувствительность к инсулину</span>
+        </li>
+        <li class="section-plus__item">
+          <span class="section-plus__number">06</span>
+          <img class="section-plus__img" src="img/plus6.png" alt="Шестой плюс">
+          <span class="section-plus__descr">Снижает верхнеe артериальноe давлениe</span>
+        </li>
+      </ul>
+    </section>
+    <section class="section-form section-padding" id="form">
+      <div class="container section-form__container">
+        <div class="section-form__left">
+          <img class="section-form__left-img" src="img/form_img.svg" alt="Заявка">
+        </div>
+        <form class="section-form__form" action="#" autocomplete="off">
+          <img class="section-form__img" src="img/image37.jpg" alt="Гарантия лучшей цены">
+          <h2 class="section-form__heading">Заявка на Оземпик</h2>
+          <span class="section-form__descr">Только до 
+            <span class="section-form__descr-color">21.05.2023</span>
+          . Количество товара по акции ограничено!
+          </span>
+          <div class="input-box">
+            <label class="section-form__label" for="GET-name">Имя</label>
+            <input class="section-form__input" id="GET-name" type="text" aria-label="Введите имя" placeholder="" name="name">
+          </div>
+          <div class="input-box">
+            <label class="section-form__label" for="GET-phone">Телефон</label>
+            <input class="section-form__input" id="GET-phone" type="number" aria-label="Введите имя" placeholder="+7 (___) ___ ____" phone="phone">
+          </div>
+          <span class="section-form__descr section-form__descr-bottom">*Нажимая на кнопку 
+            <span class="section-form__descr-color">"Забронировать Оземпик" </span>
+          Вы даете согласие на обработку Ваших персональных данных
+          </span>
+          <button class="section-form__btn light-btn" type="submit">Забронировать Оземпик</button>
+        </form>
+      </div>
+    </section>
+    <section class="section-instruction section-padding" id="instruction">
+      <div class="container section-instruction__container">
+        <h2 class="section-instruction__heading heading-h2">Оземпик - инструкция по применению</h2>
+        <img class="section-instruction__img" src="img/image1.png" alt="Оземпик">
+        <p class="section-instruction__descr">
+          <span class="section-instruction__color-text">Фармакологическое действие -</span>
+          Семаглутид является агонистом рецепторов ГПП-1 (ГПП-1Р), произведенным методом биотехнологии рекомбинантной ДНК с использованием штамма Saccharomyces cerevisiae с последующей очисткой.
+          Семаглутид представляет собой аналог ГПП-1, имеющий 94% гомологичности с человеческим ГПП-1. Семаглутид действует как агонист ГПП-1Р, который селективно связывается и активирует ГПП-1Р. ГПП-1Р служит мишенью для нативного ГПП-1.
+        </p>
+        <button class="section-instruction__btn light-btn">Подробнее</button>
+      </div>
+    </section>
+    <section class="section-booking container section-padding">
+      <h2 class="section-booking__heading heading-h2">Как забронировать &laquo;Оземпик&raquo; в&nbsp;Москве</h2>
+      <ul class="section-booking__list row">
+        <li class="section-booking__item col-lg-3 col-md-3 col-sm-6 col-xs-6">
+          <img class="section-booking__img" src="img/booking1.jpg" alt="Этап первый">
+          <p class="section-booking__descr">Вы бронируете товар в удобной аптеке на сайте или по телефону</p>
+        </li>
+        <li class="section-booking__item col-lg-3 col-md-3 col-sm-6 col-xs-6">
+          <img class="section-booking__img" src="img/booking2.jpg" alt="Этап второй">
+          <p class="section-booking__descr">Менеджер свяжется с Вами, чтобы ответить на Ваши вопросы</p>
+        </li>
+        <li class="section-booking__item col-lg-3 col-md-3 col-sm-6 col-xs-6">
+          <img class="section-booking__img" src="img/booking3.jpg" alt="Этап третий">
+          <p class="section-booking__descr">Находим удобную аптеку рядом с вами для получения бронирования</p>
+        </li>
+      </ul>
+    </section>
+    <section class="section-partners section-padding">
+      <div class="container section-partners__container">
+        <h2 class="section-partners__heading heading-h2">Наши партнеры</h2>
+        <ul class="section-partners__list">
+          <li class="section-partners__item">
+            <img src="img/partner1.png" alt="Логотип партнера">
+          </li>
+          <li class="section-partners__item">
+            <img src="img/partner2.png" alt="Логотип партнера">
+          </li>
+          <li class="section-partners__item">
+            <img src="img/partner3.png" alt="Логотип партнера">
+          </li>
+          <li class="section-partners__item">
+            <img src="img/partner4.png" alt="Логотип партнера">
+          </li>
+          <li class="section-partners__item">
+            <img src="img/partner5.png" alt="Логотип партнера">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-doc section-padding container" id="doc">
+      <h2 class="section-doc__heading heading-h2">Сертификаты и лицензии</h2>
+      <div class="section-doc__navigation">
+        <button class="sw-btn section-doc__btn section-doc__btn-left">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35343 10L12 18.3758L10.3233 20L-3.38151e-08 10L10.3233 8.46474e-07L12 1.62421L3.35343 10Z" fill="#C7413C"/>
+          </svg>
+        </button>
+        <button class="sw-btn section-doc__btn section-doc__btn-right">
+          <svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.14657 10.1113L0.5 1.73553L2.17671 0.111328L12.5 10.1113L2.17671 20.1113L0.5 18.4871L9.14657 10.1113Z" fill="#C7413C"/>
+          </svg>
+        </button>
+      </div>
+      <div class="swiper section-doc__swiper" data-mobile="false">
+        <div class="section-doc__list swiper-wrapper">
+          <a href="img/doc1.jpg" class="section-doc__item swiper-slide" data-fslightbox="gallery">
+            <span class="section-doc__text">Лицензия от «28» сентября 2019 года</span>
+            <img class="section-doc__img" src="img/doc1.jpg" alt="Лицензия">
+          </a>
+          <a href="img/doc1.jpg" class="section-doc__item swiper-slide" data-fslightbox="gallery">
+            <span class="section-doc__text">Лицензия от «28» сентября 2019 года</span>
+            <img class="section-doc__img" src="img/doc1.jpg" alt="Лицензия">
+          </a>
+          <a href="img/doc1.jpg" class="section-doc__item swiper-slide" data-fslightbox="gallery">
+            <span class="section-doc__text">Лицензия от «28» сентября 2019 года</span>
+            <img class="section-doc__img" src="img/doc1.jpg" alt="Лицензия">
+          </a>
+          <a href="img/doc1.jpg" class="section-doc__item swiper-slide" data-fslightbox="gallery">
+            <span class="section-doc__text">Лицензия от «28» сентября 2019 года</span>
+            <img class="section-doc__img" src="img/doc1.jpg" alt="Лицензия">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section-history section-padding container">
+      <img class="section-history__img" src="img/history.svg" alt="Мегафон">
+      <div class="section-history__heading-wrap">
+        <h2 class="section-history__heading heading-h2">У вас есть история, чтобы поделиться своим опытом применения Оземпика?</h2>
+        <span class="section-history__descr heading-descr">Ваша история важна для нас и может помочь вдохновить других!</span>
+      </div>
+      <button class="accent-btn section-history__btn">Поделиться историей</button>
+    </section>
+    <section class="section-review section-padding container" id="review">
+      <div class="section-review__top">
+        <div class="section-review__heading-wrap">
+          <h2 class="section-review__heading heading-h2">Отзывы  «Оземпика»</h2>
+          <p class="section-review__descr heading-descr">Он имитирует гормон ГПП-1, который выделяется, когда человек поел. Таким образом препарат стимулирует секрецию инсулина, способствует снижению сахара в крови и снижает аппетит.</p>
+        </div>
+        <button class="light-btn section-review__btn">Все отзывы</button>
+      </div>
+      <div class="swiper section-review__swiper" data-mobile="false"> 
+        <div class="section-review__list swiper-wrapper">
+          <div class="section-review__item swiper-slide">
+            <span class="section-review__date">18 мая 2023</span>
+            <span class="section-review__author">Смирнова Екатерина</span>
+            <p class="section-review__descr">Поставила спираль 7 месяцев назад. У меня была миома диаметром 3.5 см. Плюс ужасно обильные месячные, со сгустками чуть ли не с куриное яйцо.<span class="dots btnsMore">...</span><span class="more"> Гинеколог посоветовала Мирену, чтобы в дальнейшем избежать удаления матки в связи с ростом миомы. Первые 3-4 месяца мазало постоянно, первые 2 менструации были еще обильнее, чем обычно, заболели буквально через неделю вены на ногах, первое время была бессоница.Но прошло несколько месяцев, и все наладилось. Месячные с каждым разом все скуднее и скуднее( в кои-то веки я могу обойтись ОДНОЙ пачкой прокладок), мазня прекратилась, ничего не болит, в весе не прибавила. Ну а самое главное, недавно я была на узи- моя миома теперь 2 см, т.е. за полгода уменьшилась на 1.5 см. Я считаю это неплохим результатом.В общем, Миреной пока я очень довольна. Через 4.5 года обязательно поставлю ее снова</span></p>
+          </div>
+          <div class="section-review__item swiper-slide">
+            <span class="section-review__date">18 мая 2023</span>
+            <span class="section-review__author">Смирнова Екатерина</span>
+            <p class="section-review__descr">Поставила спираль 7 месяцев назад. У меня была миома диаметром 3.5 см. Плюс ужасно обильные месячные, со сгустками чуть ли не с куриное яйцо.<span class="dots btnsMore">...</span><span class="more"> Гинеколог посоветовала Мирену, чтобы в дальнейшем избежать удаления матки в связи с ростом миомы. Первые 3-4 месяца мазало постоянно, первые 2 менструации были еще обильнее, чем обычно, заболели буквально через неделю вены на ногах, первое время была бессоница.Но прошло несколько месяцев, и все наладилось. Месячные с каждым разом все скуднее и скуднее( в кои-то веки я могу обойтись ОДНОЙ пачкой прокладок), мазня прекратилась, ничего не болит, в весе не прибавила. Ну а самое главное, недавно я была на узи- моя миома теперь 2 см, т.е. за полгода уменьшилась на 1.5 см. Я считаю это неплохим результатом.В общем, Миреной пока я очень довольна. Через 4.5 года обязательно поставлю ее снова</span></p>
+          </div>
+          <div class="section-review__item swiper-slide">
+            <span class="section-review__date">18 мая 2023</span>
+            <span class="section-review__author">Lorem Ipsum текст</span>
+            <p class="section-review__descr">Lorem Ipsum является текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-question section-padding">
+      <div class="section-question__container container">
+        <div class="section-question__top">
+          <div class="section-question__heading-wrap">
+            <h2 class="heading-h2 section-question__heading">Вопрос - Ответ</h2>
+            <p class="section-question__descr">Он имитирует гормон ГПП-1, который выделяется, когда человек поел. Таким образом препарат стимулирует секрецию инсулина, способствует снижению сахара в крови и снижает аппетит.</p>
+          </div>
+          <div class="section-question__btns">
+            <button class="light-btn section-question__btn-ques">Оставить вопрос</button>
+            <button class="accent-btn section-question__btn-answ">Дать ответ</button>
+          </div>
+        </div>
+        <div class="section-question__bottom">
+          <div class="ex ex-2">
+            <ul class="accordion__list">
+              <li class="accordion">
+                <button class="accordion__control" aria-expanded="false">
+                  <span class="accordion__title">Возможна ли доставка в выходной?</span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__content" aria-hidden="true">
+                  Да, возможна.
+                </div>
+              </li>
+              <li class="accordion">
+                <button class="accordion__control" aria-expanded="false">
+                  <span class="accordion__title">Возможна ли доставка в выходной?</span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__content" aria-hidden="true">
+                  Да, возможна.
+                </div>
+              </li>
+              <li class="accordion">
+                <button class="accordion__control" aria-expanded="false">
+                  <span class="accordion__title">Возможна ли доставка в выходной?</span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__content" aria-hidden="true">
+                  Да, возможна.
+                </div>
+              </li>
+              <li class="accordion">
+                <button class="accordion__control" aria-expanded="false">
+                  <span class="accordion__title">Возможна ли доставка в выходной?</span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__content" aria-hidden="true">
+                  Да, возможна.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-formBottom container section-padding">
+      <div class="section-formBottom__left">
+        <img class="section-hero__img" src="img/hero.png" alt="Оземпик">
+      </div>
+      <div class="section-formBottom__right">
+        <form class="section-form__form section-formBottom__form" action="#" autocomplete="off">
+          <img class="section-form__img" src="img/image37.jpg" alt="Гарантия лучшей цены">
+          <h2 class="section-form__heading">Заявка на Оземпик</h2>
+          <span class="section-form__descr">Только до 
+            <span class="section-form__descr-color">21.05.2023</span>
+          . Количество товара по акции ограничено!
+          </span>
+          <div class="input-box">
+            <label class="section-form__label" for="GET-name">Имя</label>
+            <input class="section-form__input" id="GET-name" type="text" aria-label="Введите имя" placeholder="" name="name">
+          </div>
+          <div class="input-box">
+            <label class="section-form__label" for="GET-phone">Телефон</label>
+            <input class="section-form__input" id="GET-phone" type="number" aria-label="Введите имя" placeholder="+7 (___) ___ ____" phone="phone">
+          </div>
+          <span class="section-form__descr section-form__descr-bottom">*Нажимая на кнопку 
+            <span class="section-form__descr-color">"Забронировать Оземпик" </span>
+          Вы даете согласие на обработку Ваших персональных данных
+          </span>
+          <button class="section-form__btn light-btn" type="submit">Забронировать Оземпик</button>
+        </form>
+      </div>
+    </section>
+    <section class="section-map">
+      <picture >
+        <source class="section-map__img" srcset="img/Basemap-mob.png" media="(max-width: 768px)">
+        <img class="section-map__img" src="img/Basemap.png" alt="Карта»">
+      </picture>
+    </section>
+  </main>
+  <footer class="footer container">
+    <ul class="footer__left-list">
+      <li class="footer__item item-mr">
+        <h4 class="footer__title">Последние</h4>
+        <nav>
+          <ul>
+            <li class="footer__submenu-item"><a class="footer__link" href="#">О компании</a></li>
+            <li class="footer__submenu-item"><a class="footer__link" href="#">Доставка и оплата</a></li>
+            <li class="footer__submenu-item"><a class="footer__link" href="#">Инструкция</a></li>
+            <li class="footer__submenu-item"><a class="footer__link" href="#">Отследить заказ</a></li>
+          </ul>
+        </nav>
+      </li>
+      <li class="footer__item item-mr">
+        <h4 class="footer__title">Меню</h4>
+        <nav>
+          <ul>
+            <li class="footer__submenu-item"><a class="footer__link" href="index.html">Контакты</a></li>
+            <li class="footer__submenu-item"><a class="footer__link" href="#">Блог</a></li>
+            <li class="footer__submenu-item"><a class="footer__link" href="#">Возврат товара</a></li>
+            <li class="footer__submenu-item"><a class="footer__link" href="#doc">Лицензии</a></li>
+          </ul>
+        </nav>
+      </li>
+    </ul>
+    <ul class="footer__right-list">
+      <li class="footer__item">
+        <h4 class="footer__title">Блог</h4>
+        <nav>
+          <ul>
+            <li class="footer__submenu-item"><a class="footer__link" href="#">Заголовок блога</a></li>
+            <li class="footer__submenu-item"><a class="footer__link" href="#">Заголовок блога</a></li>
+            <li class="footer__submenu-item"><a class="footer__link" href="#">Заголовок блога</a></li>
+            <li class="footer__submenu-item"><a class="footer__link" href="#">Заголовок блога</a></li>
+          </ul>
+        </nav>
+      </li>
+      <li class="footer__item">
+        <h4 class="footer__title">Контакты</h4>
+        <ul>
+          <li class="footer__right-item">
+            <a href="tel:+78003024023" class="footer__phone-btn">
+              <span class="footer__contacts-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0068 15.6366L13.0138 13.6296C13.4508 13.1925 14.0418 12.9409 14.6598 12.934C15.2788 12.927 15.8745 13.1665 16.3125 13.6046L18.6973 15.9894C19.2099 16.5019 19.2099 17.333 18.6973 17.8455C17.7061 18.8368 16.2908 19.3491 14.8814 19.0914C14.3397 18.9924 13.7542 18.8698 13.3401 18.7359C12.6174 18.5023 11.8595 18.2506 10.5862 17.238C10.0078 16.7779 9.32536 16.1634 8.48846 15.3265C7.65155 14.4896 7.03699 13.8071 6.57697 13.2287C5.56436 11.9555 5.31262 11.1975 5.07898 10.4749C4.94509 10.0607 4.82255 9.4752 4.72349 8.93348C4.46578 7.52416 4.97817 6.10883 5.96939 5.11761C6.48195 4.60505 7.31298 4.60505 7.82554 5.11761L10.2104 7.50244C10.6484 7.94045 10.8879 8.53612 10.881 9.15508C10.874 9.77315 10.6224 10.3641 10.1853 10.8011L8.17833 12.8082C8.53851 13.2234 8.98674 13.7034 9.54912 14.2658C10.1115 14.8282 10.5915 15.2764 11.0068 15.6366ZM7.25109 11.6141L9.12469 9.74049C9.28791 9.57727 9.37857 9.35963 9.38105 9.13822C9.38353 8.91771 9.29863 8.71202 9.14971 8.5631L6.90141 6.3148C6.31294 6.97802 6.04907 7.84365 6.19902 8.66366C6.29735 9.20136 6.40544 9.70164 6.50624 10.0134L6.5138 10.0368C6.66362 10.5004 6.80819 10.9478 7.25109 11.6141ZM12.2008 16.5638C12.8672 17.0067 13.3145 17.1513 13.7781 17.3011C13.7859 17.3036 13.7937 17.3062 13.8015 17.3087C14.1133 17.4095 14.6136 17.5176 15.1513 17.6159C15.9713 17.7658 16.8369 17.502 17.5001 16.9135L15.2518 14.6652C15.1029 14.5163 14.8972 14.4314 14.6767 14.4339C14.4553 14.4364 14.2377 14.527 14.0744 14.6902L12.2008 16.5638Z" fill="#C7413C"/>
+                </svg>
+              </span>
+              8-800-302-40-23
+            </a>
+          </li>
+          <li class="footer__right-item">
+            <span class="footer__contacts-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 5.25H15.75V11.25V20.25H14.25V13.5H9.75V20.25H8.25V14.25V5.25ZM11.25 20.25H12.75V15H11.25V20.25ZM15.75 21.75H8.25H6.75H2.25V14.25H6.75V3.75H17.25V11.25H21.75V21.75H17.25H15.75ZM6.75 15.75V20.25H3.75V15.75H6.75ZM17.25 20.25H20.25V12.75H17.25V20.25ZM11.25 7.5V8.25H10.5V9.75H11.25V10.5H12.75V9.75H13.5V8.25H12.75V7.5H11.25Z" fill="#C7413C"/>
+              </svg>
+            </span>
+            Москва
+          </li>
+          <li class="footer__right-item">
+            <a href="mailto: apteca@protonmail.com" class="footer__mail-btn">
+              <span class="footer__contacts-icon">
+                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 0.25L0 1V13L0.75 13.75H17.25L18 13V1L17.25 0.25H0.75ZM1.5 2.6955V12.25H16.5V2.69525L8.99987 9.51356L1.5 2.6955ZM15.3099 1.75H2.68986L8.99987 7.48637L15.3099 1.75Z" fill="#C7413C"/>
+                </svg>
+              </span>
+              apteca@protonmail.com
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
